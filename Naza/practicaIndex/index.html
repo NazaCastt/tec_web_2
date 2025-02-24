@@ -2,6 +2,9 @@
 
     <head>
         <title>Animales</title>
+
+        <link rel="stylesheet" href="estilo.css">
+
         <style>
             /* Tres formas de poner estilo */
             h1 {
@@ -10,17 +13,21 @@
             }
 
             #titulo2 {
-                font-size: 10px; /*Tamano de fuente*/
+                font-size: 10px; /* Tamano de fuente */
             }
 
             .verde {
-                color: green; /*Color de la letra*/
+                color: green; /* Color de la letra */
             }
 
             .grande {
                 font-size: 30px;
             }
+
+            /*Primero escribe el archivo, luego lo sobreescrito por este codigo, luego la clase que esta a la
+            izquierda y lo sobreescribe lo que tiene mas cercano*/
         </style>
+       
     </head>
 
     <body>
@@ -29,11 +36,15 @@
         <h1 id="titulo2">Otro titulo</h1>
 
 
-        <img src="perro.jpg">
+        <img src="koda.jpg">
 
         <script>
             let a = 100;
-            console.log(b)
+            console.log(b);
+
+            function saludar(){
+                alert('Hola');
+            }
         </script>
 
         <p>
@@ -41,7 +52,7 @@
         </p>
 
         <div>
-            <button>Cambiar Color</button>
+            <button onclick="saludar()">Cambiar Color</button>
         </div>
 
     </body>
